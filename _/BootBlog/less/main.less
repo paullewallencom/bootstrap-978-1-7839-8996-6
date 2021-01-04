@@ -1,0 +1,42 @@
+body{
+	background: url(../img/hold/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.content-wrap {
+	padding-top: 61px;
+}
+
+.page-header {
+	border-bottom: 2px solid #444;
+	padding: 0 15px;
+}
+
+h1, h2,h3,h4,h5,h6 {
+	text-transform: uppercase;
+}
+
+.thumbnail {
+	opacity: .75;
+	cursor: pointer;
+
+	.caption {
+		h3 {
+			text-transform: capitalize;
+		}
+	}
+
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.carousel-caption {
+	@media(max-width: 45em){
+		display: none;
+	}
+	background: fadeout(black, 65%)
+}
